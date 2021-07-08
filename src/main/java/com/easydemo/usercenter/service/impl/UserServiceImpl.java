@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         try {
             userMapper.insertUser(user);
         } catch (Exception e) {
-            throw new BizUserException("用户注册，写入数据库失败");
+            throw new BizUserException("用户注册，写入数据库失败:");
         }
     }
 
